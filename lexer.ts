@@ -31,3 +31,8 @@ public processAll(){}
 public update(){}
 public empty(){}
 }
+private getRegex(){
+  if(!this.regex) {
+    this.regex = new RegExp(this.expr, "gmu")
+  }
+}
